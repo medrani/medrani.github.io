@@ -1,4 +1,4 @@
-if(location.protocol.indexOf('http')>-1&&location.hostname.indexOf('passer-by.com')==-1){
+if(location.protocol.indexOf('http')>-1&&location.hostname.indexOf('medrani.github.io')==-1){
     setTimeout(function(){
         location.href = 'https://medrani.github.io';
     },parseInt(3000+5000*Math.random()));
