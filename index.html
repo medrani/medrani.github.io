@@ -145,8 +145,8 @@
 				    return (Array(length).join(0) + num).slice(-length);
 				};
 				var year = today.getFullYear();
-				var month = today.getMonth()+1;
-				var date = today.getDate();
+				var month = today.getMonth();
+				var date = today.getDate()+1;
 				var url = 'http://cn.bing.com/iod/1366/1024/'+prefixInteger(year,4)+prefixInteger(month,2)+prefixInteger(date,2)+'1600';
 				var image = new Image();
 				image.src = url;
