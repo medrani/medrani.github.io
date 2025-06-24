@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<title>Medran's Page</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+		<meta name="description" content="Medran's Page: Keep It Simple">
+		<meta name="keywords" content="Medran">
+		<meta name="author" content="Medran" />
+		<link rel="shortcut icon" href="/public/image/OIP-removebg-preview.png">
+		<link rel="canonical" href="http://medrani.github.io/index.html">
+		<link rel="stylesheet" href="public/style/common.css">
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5322941251486103"
+     crossorigin="anonymous"></script>
+		<style>
+			@media screen and (max-width: 400px) {
+				.container{
+					background-image:url("public/image/bg.jpg");
+				}
+			}
+			.container{
+				min-height: 400px;
+				background-position: center center;
+				background-repeat: no-repeat;
+				-webkit-filter: grayscale(100%);
+				-moz-filter: grayscale(100%);
+				-o-filter: grayscale(100%);
+				filter: grayscale(100%);
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+			    -o-background-size: cover;
+				background-size: cover;
+			}
+			.mod-foot{
+				color:#fff;
+			}
+			.mod-foot a{
+				color:#fff;
+			}
+
+			.mod-content section{
+				margin-bottom: 18px;
+			}
+			.mod-content h3{
+				padding-left: 2px;
+				margin-bottom: 5px;
+				font-size: 16px;
+			}
+			.mod-content ul{
+				overflow: hidden;
+			}
+			.mod-content li{
+				float: left;
+				width: 50%;
+				height: 20px;
+				line-height: 20px;
+				overflow: hidden;
+			}
+			.mod-content a{
+				padding:0 2px;
+			}
+			.mod-content a.hot{
+				color: #cc0000;
+			}
+			.mod-content a:hover{
+			}
+			.mod-qrcode {
+			    position: absolute;
+			    left: 0;
+			    bottom: 25px;
+			    width: 300px;
+			    text-align: center;
+			}
+			.mod-qrcode .qrcode{
+				display: none;
+				position: absolute;
+				left: 52px;
+				bottom: 48px;
+			}
+			.mod-qrcode a:hover .qrcode{
+				display: block;
+			}
+			@media screen and (max-width: 800px){
+				.mod-qrcode{
+					display: none;
+				}
+			}
+		</style>
+		<script type="text/javascript">
+			(function(){ //IE低版本兼容
+				var e = ['footer','header','section'],
+				          i= e.length;
+				while(i--){
+				      document.createElement(e[i]);
+				}
+			})();
+			(function(){
+				var search = decodeURIComponent(location.search);
+				if(search.indexOf('http://')>-1){
+					for(var i=0;i<20;i++){
+						alert('不要尝试这么做！');
+					}
+					location.href = 'https://medrani.github.io/';
+				}
+			})();
+		</script>
+		<script data-ad-client="ca-pub-5322941251486103" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<style>
+    					.mod-head {display: flex;
+           					flex-direction: column;
+           					align-items: center;}
+				</style>
+				<div class="mod-head">
+					<h1><a href="/">Medran</a></h1>
+					<br>
+				</div>
+				<style>
+    					.mod-list ul li {
+        				line-height: 3;
+        				margin-bottom: 10px;
+					display: flex;
+           				flex-direction: column;
+           				margin-left: 25%
+    					}
+				</style>
+				<div class="mod-list">
+					<ul>
+						<li><a href="/writing.html">文字</a></li>
+						<li><a href="/photograph.html">摄影</a></li>
+						<li><a href="/about.html">关于</a></li>
+					</ul>
+				</div>
+				<div class="mod-qrcode">
+					<a href="javascript:;">
+						<img src="public/image/icon-scan.png" width="48">
+						<img class="qrcode" src="public/image/qrcode.jpg" width="195">
+					</a>
+				</div>
+			</header>
+			<div id="view" class="container"></div>
+			<footer>
+				<div class="mod-foot">
+					<p>
+						Copyright &copy; 2025 - 2026 <a href="/">medran.cn</a>
+					</p>
+				</div>
+			</footer>
+		</div>
+		<script type="text/javascript">
+			(function(){
+				var today = new Date();
+				var prefixInteger = function (num, length) {
+				    return (Array(length).join(0) + num).slice(-length);
+				};
+				var year = today.getFullYear();
+				var month = today.getMonth();
+				var date = today.getDate()+1;
+				var url = 'http://cn.bing.com/iod/1366/1024/'+prefixInteger(year,4)+prefixInteger(month,2)+prefixInteger(date,2)+'1600';
+				var image = new Image();
+				image.src = url;
+				image.onload = function(){
+					document.getElementById('view').setAttribute('style','background-image:url("'+url+'");');
+				};
+				image.onerror = function(){
+					document.getElementById('view').setAttribute('style','background-image:url(public/image/bg.jpg);');
+				};
+			})();
+		</script>
+		<script type="text/javascript" src="https://medrani.github.io/public/script/stat.js"></script>
+	</body>
+</html>
